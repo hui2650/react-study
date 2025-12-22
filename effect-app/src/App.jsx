@@ -1,9 +1,9 @@
 import GithubUserCard from "./components/GithubUserCard"
-import KeywordWatcher from "./components/KeywordWatcher"
-import MountEffect from "./components/MountEffect"
-import RenderDebugger from "./components/RenderDebugger"
-import Timer from "./components/Timer"
-import UserProfile from "./components/UserProfile"
+// import KeywordWatcher from "./components/KeywordWatcher"
+// import MountEffect from "./components/MountEffect"
+// import RenderDebugger from "./components/RenderDebugger"
+// import Timer from "./components/Timer"
+// import UserProfile from "./components/UserProfile"
 
 function App() {
 

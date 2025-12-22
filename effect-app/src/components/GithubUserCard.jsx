@@ -43,12 +43,12 @@ const GithubUserCard = () => {
       <input type="text" value={input} onChange={(e)=> setInput(e.target.value)} />
       <button onClick={()=> setUsername(input)}>프로필 불러오기</button>
       
-        <div>
-            <p>status: {status}</p>
+        <div >
+            <p >status: {status}</p>
             <p>username: {username}</p>
             {user && (
                 <div>
-                <p>이름: {user.name}</p>
+                <p >이름: {user.name}</p>
                 <p>팔로워수: {user.followers}</p>
                 <img style={{borderRadius: '50%' }} src={user.avatar_url} alt="" />
                 </div>
