@@ -1,0 +1,48 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    // File Layout
+    "rootDir": "./src", // 소스 파일의 최상위 루트를 지정한다.
+    "outDir": "./dist", // 컴파일된 결과물들이 저장될 폴더를 지정한다
+
+    // Environment Settings
+    // See also https://aka.ms/tsconfig/module
+    "module": "nodenext", // Node.js의 최신 ES Modules 규칙을 따른다
+    "target": "esnext", // TypeScript가 최신 JS기능을 거의 그대로 유지하도록 한다
+    "types": [], //빈 배열로 설정하면 명시적으로 import된 타입만 포함하게 하여 빌드 속도와 제어력을 높인다.
+    // For nodejs:
+    // "lib": ["esnext"],
+    // "types": ["node"],
+    // and npm install -D @types/node
+
+    // Other Outputs
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Style Options
+    // "noImplicitReturns": true,
+    // "noImplicitOverride": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // "noFallthroughCasesInSwitch": true,
+    // "noPropertyAccessFromIndexSignature": true,
+
+    // Recommended Options
+
+    "strict": true, // 모든 엄격한 타입 검사를 일괄적으로 활성화합니다.
+    // (예: null과 undefined 처리, any 암묵적 사용 방지 등) 현대 TS 개발의 기본값으로 강력히 권장됩니다.
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
